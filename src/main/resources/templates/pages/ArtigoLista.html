@@ -23,7 +23,7 @@
                 <td><span th:text="${artigo.id}"> Title </span></td>
                 <td><span th:text="${artigo.titulo}"> Author </span></td>
                 <td>
-                    <a th:href="${artigo.id}" class="btn btn-info">Editar</a>
+                    <a th:href="@{/artigos/{id}(id=${artigo.id})}" class="btn btn-info">Editar</a>
                     <a th:href="@{/artigos/delete/{id}(id=${artigo.id})}" class="btn btn-danger">Remover</a>
                 </td>
             </tr>
